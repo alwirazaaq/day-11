@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alwi Razaq</title>
+    <link rel="stylesheet" href="ASSETS/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <div class="left-nav">
+            <img src="ASSETS/IMG/mariobox.png" width="55" height="45" alt="icon">
+            <ul>
+                <li >
+                   <a class="home" href="/">Home</a>
+                 </li>
+                <li >
+                   <a href="/project">Add Blog</a>
+                 </li>
+                <li >
+                   <a href="/testimonial">Testimonials</a>
+                 </li>
+            </ul>
+        </div>
+        <div class="right-nav">
+            <a href="/contact">
+                <button>Contact Me</button>
+            </a>
+        </div>
+        <div id="barMenu">
+            <button onclick="openBar()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="navContainer"> 
+        <a href="/" class="home">Home</a>
+        <a href="/project">My Project</a>
+        <a href="/testimonial">Testimonials</a>
+        <a href="/contact">
+            <button>Contact Me</button>
+        </a>
+    </div>
+
+
+    <div class="container-card">
+        <div class="content-card">
+            <h1>You Guys..</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quae officia est, assumenda et, nam nemo animi, 
+                error voluptates ipsa eius corrupti! Nam doloremque repellat quae consequatur at tempora officia. Lorem, ipsum 
+                dolor sit amet consectetur adipisicing elit. Pariatur minima nemo placeat! Ipsum autem cum possimus doloribus.
+                error voluptates ipsa eius corrupti! Nam doloremque repellat quae consequatur at tempora officia. Lorem, ipsum 
+                dolor sit amet consectetur adipisicing elit. Pariatur minima nemo placeat! Ipsum autem cum possimus doloribus.  
+                Aliquam doloremque repellat, neque recusandae, esse nobis quibusdam dolor sunt ut blanditiis laudantium? 
+                wkwkwkwkwkwkwkwwkwkwkwkw</p>
+            <!-- Button -->
+            <div class="contact">
+                <a href="contact.html">
+                    <button>Contact</button>
+                </a>
+                <span>
+                    Download CV
+                    <i class="fa-solid fa-download"></i> 
+                </span>
+            </div>
+            <!-- Social Media -->
+            <div class="social-media">
+                <a href="https://www.instagram.com/alwirazaaq/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fa-brands fa-playstation"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fa-brands fa-accessible-icon"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fa-brands fa-steam"></i>
+                </a>
+            </div>
+        </div>
+        <div class="img-card">
+            <img src="ASSETS/IMG/rick astley.jpg" alt="profile">
+            <h3>Alwi Razaq</h3>
+            <span>Never Gonna Give You Up</span>
+        </div>
+    </div>
+
+
+    <!--project card-->
+    <section id="listPosts">
+        <br><br><br>
+          <h3>My Project</h3>
+            <div class="posts" id="posting">
+                <a href="/project-detail/1">
+                    <div class="card">
+                      <img src="ASSETS/IMG/hacker.jpg" alt="post" >
+                     <h4>Project 1</h4>
+                     <span>durasi : 3 bulan</span>
+                     <p> Bagaimana pemberontakan tersebut berjalan? Pemberontakan PKI Madiun diawali 
+                         dengan melancarkan propaganda anti pemerintah dan pemogokan kerja oleh kaum buruh.
+                         Selain itu pemberontakan juga dilakukan dengan menculik dan membunuh 
+                         beberapa tokoh negara.</p>
+                     <div class="technologyIcon">
+                        <img src="ASSETS/IMG/nodejs.png" alt="nodejs">
+                        <img src="ASSETS/IMG/golangicon.png" alt="golang">
+                        <img src="ASSETS/IMG/reactjs.png" alt="reactjs">
+                        <img src="ASSETS/IMG/sql.png" alt="sql">
+                     </div>
+                     <div class="action">
+                         <button>edit</button>
+                         <button>delete</button>
+                     </div>
+                  </div>
+                </a>
+            </div>
+        </section>
+    <script src="ASSETS/JS/project.js"></script>    
+    <script src="ASSETS/JS/index.js"></script>
+</body>
+
+</html>
+

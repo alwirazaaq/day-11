@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#blog{
+    font-weight: 600;
+}
+body { 
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding: 35px 50px;
+    height: 20px;
+}
+
+.left-nav {
+    display: flex;
+    align-items: center;
+}
+ul {
+    display: flex;
+    list-style: none;
+    margin-left: 50px;
+}
+li {
+    margin-right: 50px;
+}
+
+.right-nav button{
+    font-size: 15px;
+    padding: 10px 20px; 
+    border-radius: 5px;
+    color: white;
+    background-color: #c50808;
+    border: none;
+}
+.right-nav a button {
+    cursor: pointer;
+}
+
+#addPost {
+    height: 100vh;
+    background-color: #e1e4e9;
+}
+
+
+.container {
+    width: 500px;
+    margin: 0px auto;
+    padding: 30px 0px;
+}
+.container h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 50px;
+    font-weight: bolder;
+}
+.dateInput {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+#startDate:disabled{
+    border: 1px solid #ccc;
+    color: #524e4c;
+    background-color: whitesmoke;
+}
+#projectName,#startDate,#endDate,textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-size: 18px;
+    color: gray;
+    resize: none;
+    outline: none;
+}
+
+.uploadImage{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    border: 1px solid #afadae;
+}
+#image {
+    width: 100%;
+}
+input[type=file]::file-selector-button{
+    display: inline-block;
+    background-color: #e4e4e4;
+    color: #afadae;
+    padding: 15px;
+    cursor: pointer;
+    border: none;
+  }
+i{
+    font-size: 25px;
+    color: #0d0d0d;
+    padding-right: 10px;
+}
+
+
+label{
+    display: block;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 5px;
+}
+form {
+    display: block;
+}
+#button {
+    text-align: right;
+    margin-top: 20px;
+}
+#button button{
+    padding: 6px 28px;
+    border-radius: 14px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    background-color: #121627;
+    cursor: pointer;
+}
+.tech{
+    display: grid;
+    grid-template-columns: auto auto;
+    color: #524e4c;
+}
+.tech input {
+    width: 18px;
+    height: 18px;
+}
+.tech div{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+
+@media only screen and (max-width:1200px){
+    .posts {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:992px){
+    .posts {
+        grid-template-columns: auto auto;
+    }
+}
+#barMenu {
+    display: none;
+}
+.navContainer {
+    display: none;   
+}
+@media only screen and (max-width: 768px) {
+    .action button {
+        font-size: 15px;
+    }
+    nav {
+        padding: 35px 20px;
+    }
+    nav ul {
+        display: none;
+    }
+    .right-nav{
+        display: none;
+    }
+  
+    #barMenu {
+        display: block;
+    }
+    #barMenu button{
+        border: none;
+        cursor: pointer;
+    }
+    #barMenu i {
+        font-size: 28px;
+    }
+   
+    .navContainer {
+        background: #d4d4d4;
+    }
+    .navContainer a{
+        color: white;
+        color: #c50808;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    .navContainer button{
+        font-size: 15px;
+        padding: 10px 20px; 
+        border-radius: 5px;
+        color: white;
+        background-color: #c50808;
+        border: none;
+        cursor: pointer;
+    }
+    .posts {
+        width: 100%;
+
+    }
+    .container {
+        width: 90%
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .posts{
+        grid-template-columns: auto;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Testimonial</title>
+    <link rel="stylesheet" href="ASSETS/CSS/testimonial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<body>
+    <nav>
+        <div class="left-nav">
+            <img src="ASSETS/IMG/mariobox.png" width="55" height="45" alt="icon">
+            <ul>
+                <li >
+                   <a href="/">Home</a>
+                 </li>
+                <li >
+                   <a id="blog" href="/project">Add Blog</a>
+                 </li>
+                 <li >
+                    <a href="/testimonial" id="testi">Testimonials</a>
+                  </li>
+            </ul>
+        </div>
+        <div class="right-nav">
+            <a href="/contact">
+                <button>Contact Me</button>
+            </a>
+        </div>
+        <div id="barMenu">
+            <button onclick="openBar()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="navContainer"> 
+        <a href="/">Home</a>
+        <a href="/project" >My Project</a>
+        <a href="/testimonial" id="testi">Testimonials</a>
+        <a href="/contact">
+            <button>Contact Me</button>
+        </a>
+    </div>
+
+    <div class="container">
+        <h1>My Testimonials</h1>
+        <div class="containerRating">
+            <h2>Rating By Star</h2>
+            <div class="rating">
+                <button id="all" onclick="getAllTestimonialsData()">All</button>
+                <button onclick="getFilteredTestimonial(1)">1 <i class="fa-solid fa-star"></i></button>
+                <button onclick="getFilteredTestimonial(2)">2 <i class="fa-solid fa-star"></i></button>
+                <button onclick="getFilteredTestimonial(3)">3 <i class="fa-solid fa-star"></i></button>
+                <button onclick="getFilteredTestimonial(4)">4 <i class="fa-solid fa-star"></i></button>
+                <button onclick="getFilteredTestimonial(5)">5 <i class="fa-solid fa-star"></i></button>
+            </div>
+        </div>
+        <div class="testimonial" id="testimonial">
+       
+        </div>
+    </div>
+    
+    <script src="ASSETS/JS/index.js"></script>
+    <script src="ASSETS/JS/ajax.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0; 
+}
+a {
+    text-decoration: none;
+    /* color: black; */
+}
+.left-nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+body { 
+    font-family: 'Poppins', sans-serif;
+    background-color: #e1e4e9;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding: 25px 50px;
+    height: 20px;
+}
+
+.left-nav {
+    display: flex;
+    align-items: center;
+}
+ul {
+    display: flex;
+    list-style: none;
+    margin-left: 50px;
+}
+li {
+    margin-right: 50px;
+}
+.right-nav button{
+    font-size: 15px;
+    padding: 10px 20px; 
+    border-radius: 5px;
+    color: white;
+    background-color: #c50808;
+    border: none;
+}
+
+.container {
+    width: 500px;
+    margin: 30px auto;
+    padding: 50px;
+}
+.container h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 50px;
+    font-weight: bolder;
+}
+input,select,textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-size: 18px;
+    color: gray;
+    resize: vertical;
+    outline: none;
+
+}
+label{
+    font-weight: 700;
+    text-transform: capitalize;
+}
+form {
+    display: block;
+}
+#button {
+    text-align: right;
+    margin-top: 20px;
+}
+#button button{
+    padding: 6px 28px;
+    border-radius: 14px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    background-color: #c50808;
+    cursor: pointer;
+}
+
+#barMenu {
+    display: none;
+}
+.navContainer {
+    display: none;   
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        padding: 25px 20px;
+    }
+    nav ul {
+        display: none;
+    }
+    .right-nav{
+        display: none;
+    }
+  
+    #barMenu {
+        display: block;
+    }
+    #barMenu button{
+        border: none;
+        cursor: pointer;
+    }
+    #barMenu i {
+        font-size: 28px;
+    }
+   
+    .navContainer {
+        background: #d4d4d4;
+    }
+    .navContainer a{
+        color: white;
+        color: #c50808;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    .navContainer button{
+        font-size: 15px;
+        padding: 10px 20px; 
+        border-radius: 5px;
+        color: white;
+        background-color: #c50808;
+        border: none;
+        cursor: pointer;
+    }
+
+    .container {
+        width: auto;
+    }
+}

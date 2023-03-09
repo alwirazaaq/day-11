@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.home {
+    font-weight: 600;
+}
+
+body { 
+    font-family: 'Poppins', sans-serif;
+    background-color: #e1e4e9;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding: 25px 50px;
+    height: 20px;
+}
+
+.left-nav {
+    display: flex;
+    align-items: center;
+}
+ul {
+    display: flex;
+    list-style: none;
+    margin-left: 50px;
+}
+li {
+    margin-right: 50px;
+    font-weight: 500;
+}
+
+.right-nav button{
+    font-size: 15px;
+    padding: 10px 20px; 
+    border-radius: 5px;
+    color: white;
+    background-color: #c50808;
+    border: none;
+}
+.right-nav a button {
+    cursor: pointer;
+}
+.container-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+    background-color: whitesmoke;
+    margin: 100px auto;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px #a1a5a8;
+}
+.content-card{
+    width: 60%;
+    padding: 60px 0px;
+}
+.content-card p {
+    margin-top: 30px;
+    line-height: 25px;
+}
+.contact { 
+    margin-top: 50px;
+}
+.contact button {
+    padding: 10px 40px; 
+    border-radius: 20px;
+    color: white;
+    background-color: #c50808;
+    border: none;
+    font-size: 17px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.contact span {
+    cursor: pointer;
+    font-size: 20px;
+}
+.contact span i{
+    margin-left: 15px;
+}
+
+.social-media{
+    margin-top: 60px;
+    font-size: 40px;
+
+}
+.social-media i {
+    margin-right: 32px;
+    cursor: pointer;
+}
+.img-card{
+    width: 30%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f7f6f4;
+    text-align: center;
+    padding-bottom: 20px;
+    box-shadow: 10px 10px 20px  #d4d4d4 ;
+}
+.img-card img {
+    object-fit: cover;
+    width: 100%;
+}
+.img-card img,h3,span {
+    margin-bottom: 10px;
+}
+
+#barMenu {
+    display: none;
+}
+.navContainer {
+    display: none;   
+}
+@media only screen and (max-width: 966px){
+
+    .container-card{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        align-items: start;
+    }
+    .container-card .content-card{
+        width: 80%;
+        margin: auto;
+    }
+    .container-card .content-card .social-media{
+        text-align: center;
+    }
+    .container-card .content-card .contact span{
+        font-size: 16px;
+    }
+    .container-card .content-card .contact button{
+        padding: 10px 25px;
+    }
+    .container-card .img-card{
+        width: 300px;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+}
+
+/* Section listPosts */
+h3{
+    font-size: 38px;
+    text-align: center;
+    padding: 70px 0px;
+}
+.posts{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 35px;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+.card{
+    border-radius: 10px;
+    box-shadow: 1px 10px 10px  #00000030;
+    padding: 0px 16px;
+}
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card h4 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+.card span {
+    font-size: 13px;
+    color: #524e4c;
+}
+.card p {
+    font-size: 15px;
+    padding: 20px 0px;
+}
+
+.technologyIcon{
+    display: flex;
+    padding: 20px 0px;
+}
+.technologyIcon img {
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+}
+.action{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding: 20px 0px;
+}
+.action button {
+    padding: 5px 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #c50808;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    nav {
+        padding: 25px 20px;
+        background-color: transparent;
+    }
+    .right-nav{
+        display: none;
+    }
+  
+    #barMenu {
+        display: block;
+    }
+    #barMenu button{
+        border: none;
+        cursor: pointer;
+    }
+    #barMenu i {
+        font-size: 28px;
+    }
+   
+    .navContainer {
+        background: #d4d4d4;
+    }
+    .navContainer a{
+        color: white;
+        color: #c50808;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    .navContainer button{
+        font-size: 15px;
+        padding: 10px 20px; 
+        border-radius: 5px;
+        color: white;
+        background-color: #c50808;
+        border: none;
+        cursor: pointer;
+    }
+}
